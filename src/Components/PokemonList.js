@@ -75,7 +75,7 @@ function PokemonList() {
         </table>
       </div>
       
-      <div className="pokemon-details-container">
+      <div className={`pokemon-details-container ${selectedPokemon ? 'active' : ''}`}>
       {selectedPokemon && (
         <div className="pokemon-details">
           <h2>{selectedPokemon.name}</h2>
